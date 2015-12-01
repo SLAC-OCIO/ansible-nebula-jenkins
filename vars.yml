@@ -1,0 +1,13 @@
+# Prerequisites. .
+rpm_prerequisites:
+ - wget
+ - screen
+ - siege
+ - python-pip
+ - firefox
+ - git
+ - fabric
+ - unzip
+ - xorg-x11-serv
+ - fuse-encfs
+ - mlocate

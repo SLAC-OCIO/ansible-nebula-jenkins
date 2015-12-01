@@ -1,0 +1,8 @@
+[defaults]
+transport = paramiko
+hostfile = ~/.dotfiles/ansible_hosts
+remote_user = aduston
+ask_sudo_pass = True
+remote_tmp = /tmp/ansible/tmp
+#roles_path = /afs/slac.stanford.edu/u/sf/xalg/code/ansible/roles
+roles_path = ~/Google Drive/Current/Development/DevOps/ansible/role

@@ -1,0 +1,27 @@
+---
+
+- hosts:
+   - jenkins
+   - jenkins_bots
+  vars_files:
+  - vars.yml
+
+  roles:
+    - common
+    - { role: ansible-role-repo-epel }
+    - { role: ansible-oracle-java,
+         oracle_java_set_as_default: yes }
+    - { role: ansible-role-jenkins,
+          jenkins_plugins:
+            - git
+            - sonar
+            - ssh
+            - credentials
+            - drupal-developer
+            - github
+            - global-variable-string-parameter
+            - python }
+
+
+  sudo: True
+  remote_user: centos
